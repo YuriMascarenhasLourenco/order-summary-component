@@ -3,12 +3,13 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-image: url('./images/pattern-background-desktop.svg');
+    background:url('./images/pattern-background-desktop.svg') hsl(225, 100%, 94%) ;
+  
     background-repeat: no-repeat;
     min-height: 100vh;
     background-size: 100%;
 
-    background-color:   hsl(225, 100%, 94%);
+
     text-align:center;  
     font-family: 'Red Hat Display', sans-serif;
 }
@@ -71,15 +72,17 @@ a{
     flex-direction: column;
     width: 250px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 .cancel{
     background-color: white;
-    padding: 0.2rem 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     font-family: 'Red Hat Display', sans-serif;
     border: none;
     color: hsl(224, 23%, 55%);
     font-weight: 700;
+    cursor: pointer;
 }
 .payment{
     background-color: hsl(245, 75%, 52%);
@@ -90,4 +93,13 @@ a{
     border: none;
     font-weight: 500;
     color: whitesmoke;
+    cursor: pointer;
+}
+.cancel:hover{
+    background-color: crimson;
+    transition: all 0.5s ease;
+}
+.payment:hover{
+    background-color:limegreen;
+    transition: all 0.5s ease;
 }
